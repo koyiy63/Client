@@ -1,0 +1,50 @@
+{
+  "name": "comprehensive-api-docs",
+  "version": "1.0.0",
+  "description": "A comprehensive multi-language project demonstrating API documentation",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts"
+  },
+  "keywords": [
+    "api",
+    "documentation",
+    "typescript",
+    "react",
+    "vue",
+    "validation",
+    "ui"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vue": "^3.3.0",
+    "validator": "^13.11.0",
+    "lodash": "^4.17.21",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/validator": "^13.11.0",
+    "@types/lodash": "^4.14.202",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "@types/jest": "^29.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "vue": ">=3.0.0"
+  }
+}
