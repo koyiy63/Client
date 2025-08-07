@@ -1,0 +1,20 @@
+{
+  "name": "IELTS Teacher A–Z Course",
+  "short_name": "IELTS Teacher",
+  "start_url": "/ielts-teacher-site/index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#38bdf8",
+  "icons": [
+    {
+      "src": "/ielts-teacher-site/assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/ielts-teacher-site/assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

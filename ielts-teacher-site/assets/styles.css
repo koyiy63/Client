@@ -51,6 +51,8 @@ body {
 .navlinks a { color: var(--muted); text-decoration: none; padding: 8px 10px; border-radius: 8px; }
 .navlinks a:hover, .navlinks a.active { color: var(--text); background: rgba(148,163,184,0.12); }
 
+#navToggle { display: none; }
+
 /* Hero */
 .hero { padding: 64px 0 24px; }
 .hero h1 {
@@ -83,6 +85,13 @@ body {
 .button.brand { border-color: rgba(56,189,248,0.45); background: rgba(56,189,248,0.15); }
 .button.cta { border-color: rgba(34,197,94,0.45); background: rgba(34,197,94,0.15); }
 
+/* Content */
+.content h1, .content h2, .content h3 { scroll-margin-top: 80px; }
+.toc { background: rgba(148,163,184,0.07); border: 1px solid rgba(148,163,184,0.15); border-radius: 12px; padding: 14px; }
+.toc a { color: var(--link); text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+.code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; background: rgba(148,163,184,0.12); padding: 2px 6px; border-radius: 6px; }
+
 /* Sections */
 .section { padding: 18px 0 40px; }
 .section h2 { font-size: 24px; margin: 0 0 12px; }
@@ -105,4 +114,17 @@ ul.checklist li:before { content: "✓"; position: absolute; left: 0; top: 0; co
 
 @media (min-width: 1024px) {
   .card { grid-column: span 4; }
+}
+
+/* Mobile nav */
+@media (max-width: 720px) {
+  .navlinks { display: none; position: absolute; right: 20px; top: 64px; flex-direction: column; background: rgba(2,6,23,0.95); border: 1px solid rgba(148,163,184,0.2); border-radius: 12px; padding: 10px; }
+  #navToggle { display: inline-flex; }
+}
+
+/* Print-friendly */
+@media print {
+  body { background: #fff; color: #000; }
+  .header, .footer, .nav, .badges { display: none !important; }
+  .card { box-shadow: none; border: 1px solid #ccc; }
 }
